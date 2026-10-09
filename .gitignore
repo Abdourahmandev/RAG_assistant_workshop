@@ -22,10 +22,10 @@ htmlcov/
 Thumbs.db
 ~$*
 
-# Local archives, notebooks and superseded workshop materials
+# Local archives, notebooks and presentation materials
 *.zip
 *.ipynb
 docs/superpowers/
-RAG_Workshop_Hacktoberfest_2026.pptx
-RAG_Workshop_Hacktoberfest_2026_EN.pptx
+*.pptx
+RAG_*Guide*.pdf
 RAG_Presenter_Script_EN.pdf

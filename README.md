@@ -4,19 +4,9 @@ Build a document assistant with [`app.py`](app.py) in the terminal and
 [`streamlit_app.py`](streamlit_app.py) in the browser. Both applications use the
 same [`rag/`](rag/) package. No notebook or Jupyter server is required.
 
-The software, slides, presenter guide and technical messages are in English.
+The software, documentation and technical messages are in English.
 The source PDF and the interactive RAG questions and answers remain in French.
 The evaluation suite includes English questions to test retrieval across languages.
-
-## Presentation materials
-
-- [`RAG_Workshop_Guided_EN.pptx`](RAG_Workshop_Guided_EN.pptx):
-  21 slides that alternate RAG concepts, the selected strategies and guided practice,
-  including cloning the project from GitHub.
-  Every slide includes a speaking script in the presenter notes.
-- [`RAG_Workshop_Presenter_Guide_EN.pdf`](RAG_Workshop_Presenter_Guide_EN.pdf):
-  a demonstration run card, setup commands, strategy explanations and the script
-  for every slide. Use this guide with the 21-slide deck.
 
 Notebooks are not required or included in this repository.
 
@@ -42,7 +32,7 @@ cd RAG_assistant_workshop
 ```
 
 Then follow the setup for your operating system below. The repository includes
-the code, sample PDF, tests and presentation materials. Configure your own
+the code, source PDF, tests and setup files. Configure your own
 `.env` privately. The first processing run creates the embedding cache and local
 vector database; allow time for this before the workshop.
 
@@ -186,9 +176,8 @@ abstention. These are separate measures on a small test set, not general accurac
 Comparing `--k 3` with `--k 5` is an experiment, not a promised improvement.
 
 Before the session, check dependencies, inspect the document, prepare the cache
-and test a real question. If an endpoint is unavailable, use the recorded
-application views on slides 14 and 17 and the source quotation on slide 18,
-clearly identifying them as recorded examples. Stop Streamlit with `Ctrl+C` in its terminal. Manage the
+and test a real question. If an endpoint is unavailable, check its status in
+Hugging Face before retrying. Stop Streamlit with `Ctrl+C` in its terminal. Manage the
 Hugging Face endpoints separately; closing the local application does not pause them.
 
 ## Credentials and sharing
@@ -200,7 +189,7 @@ questions are sent to the hosted endpoints; use an appropriate demonstration
 document. Hosted endpoints must be accessible and may incur costs.
 
 Distribute `app.py`, `streamlit_app.py`, `.streamlit/`, `rag/`, `README.md`,
-`requirements.txt`, `.env.example`, the source PDF and the presentation materials.
+`requirements.txt`, `.env.example` and the source PDF.
 Include `tests/` if participants will run the checks. Do not distribute `.env`,
 `.venv/`, `.rag_cache/`, `base_vectorielle/` or historical `resultats/` data.
 The old notebooks and Ollama variant are not included.
