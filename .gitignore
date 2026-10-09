@@ -1,0 +1,31 @@
+.venv/
+base_vectorielle/
+resultats/
+.rag_cache/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+
+# Credentials, runtime output and local tooling
+.streamlit/secrets.toml
+*.py[cod]
+*.log
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+~$*
+
+# Local archives, notebooks and superseded workshop materials
+*.zip
+*.ipynb
+docs/superpowers/
+RAG_Workshop_Hacktoberfest_2026.pptx
+RAG_Workshop_Hacktoberfest_2026_EN.pptx
+RAG_Presenter_Script_EN.pdf
